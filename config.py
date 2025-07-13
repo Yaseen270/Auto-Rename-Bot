@@ -5,22 +5,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "736532225-w") 
+    API_ID    = os.environ.get("API_ID", "22090558")
+    API_HASH  = os.environ.get("API_HASH", "899b115aa4ee8ffe14165a77ffc9506e")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7611352670:AAFwxLKUAwyYhtVlE9NoJPKVNYMK8BUT38g") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Yato")     
-    DB_URL  = os.environ.get("DB_URL","mongodb")
+    DB_NAME = os.environ.get("DB_NAME","yeasin")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://ya01875312198:QJLlmyecC7xNt7EI@cluster0.1mxvx7g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     PORT = os.environ.get("PORT", "8080")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/29a3acbbab9de5f45a5fe.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6497757690').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://img.freepik.com/free-photo/anime-eyes-illustration_23-2151660486.jpg?semt=ais_hybrid&w=740")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7525127704').split()]
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'codeflix_bots').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001868871195"))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1001868871195"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002433152779"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002845028813"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
